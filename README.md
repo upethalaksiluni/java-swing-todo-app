@@ -103,14 +103,13 @@ ActionListener is an interface that handles action events (like button clicks).
 It requires implementing actionPerformed(ActionEvent e).
 
 Example:
-
-java
-Copy code
+```
 button.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e) {
         // Action logic
     }
 });
+```
 Q4. How are layouts managed in Java?
 Java provides layout managers such as:
 
@@ -145,22 +144,22 @@ Check getSource() in actionPerformed()
 Use anonymous inner classes
 
 Example:
-
-java
-Copy code
+```
 if (e.getSource() == button1) {...}
 Q8. Difference between JFrame and JPanel
 Component	Description
 JFrame	Top-level application window
 JPanel	Container used to group components
+```
 
 Q9. How to add a Scroll Bar?
 Wrap the component inside JScrollPane.
 
-java
-Copy code
+```
 JScrollPane scrollPane = new JScrollPane(list);
 panel.add(scrollPane);
+```
+
 Q10. What is MVC Architecture?
 Layer	Responsibility
 Model	Data & logic (Task, TodoModel)
